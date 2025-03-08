@@ -3,4 +3,4 @@ numpy
 pandas
 scikit-learn
 pymongo
-openai
+openai==0.28
