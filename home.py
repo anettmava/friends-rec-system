@@ -54,9 +54,9 @@ def get_embedding(text):
         # Get the embedding for the response from OpenAI API 
         response = openai.Embedding.create(
             model="text-embedding-ada-002",
-            input=[text]  # The input should be a list of strings
+            input=text
         )
-        return response['data'][0]['embedding']
+        return response.data[0].embedding
     except Exception as e:
         st.error(f"Error getting embedding from OpenAI: {e}")
         return None
