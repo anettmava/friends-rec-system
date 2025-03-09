@@ -6,11 +6,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 from bson.binary import Binary
 import pickle
 
-#* Debugging: Check if secrets are set
-# if "URI_URL" in st.secrets:
-#     st.write("MongoDB URI is set.")
-# else:
-#     st.error("MongoDB URI is not set in st.secrets.")
+# Debugging: Check if secrets are set
+if "URI_URL" in st.secrets:
+    st.write("MongoDB URI is set.")
+else:
+    st.error("MongoDB URI is not set in st.secrets.")
 
 # if "OPENAI_API_KEY" in st.secrets:
 #     st.write("OpenAI API key is set.")
@@ -38,7 +38,7 @@ st.divider()
 
 #st.image("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-vector%2Fhand-drawn-valentine-s-day-penguins-couple_23-2148390371.jpg&f=1&nofb=1&ipt=1bc3afe7a7710f79006ea0810b3f5f62dda75dda3e29db6f12ddd4f3820dc79f&ipo=images")
 
-st.subheader("Fill the questions below to get your techie match")
+st.subheader("Fill the questions below to get your frienship match")
 
 name = st.text_input("What is your name?")
 hobby = st.text_input("What’s your favorite hobby or pastime?")
