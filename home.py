@@ -6,16 +6,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 from bson.binary import Binary
 import pickle
 
-# Debugging: Check if secrets are set
-if "URI_URL" in st.secrets:
-    st.write("MongoDB URI is set.")
-else:
-    st.error("MongoDB URI is not set in st.secrets.")
+#* Debugging: Check if secrets are set
+# if "URI_URL" in st.secrets:
+#     st.write("MongoDB URI is set.")
+# else:
+#     st.error("MongoDB URI is not set in st.secrets.")
 
-if "OPENAI_API_KEY" in st.secrets:
-    st.write("OpenAI API key is set.")
-else:
-    st.error("OpenAI API key is not set in st.secrets.")
+# if "OPENAI_API_KEY" in st.secrets:
+#     st.write("OpenAI API key is set.")
+# else:
+#     st.error("OpenAI API key is not set in st.secrets.")
 
 # MongoDB connection
 try:
